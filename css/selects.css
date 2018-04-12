@@ -1,0 +1,620 @@
+select.control {
+	display: inline;
+	width: 100%;
+	padding: 9px 10px 9px 5px;
+	margin: 0;
+	margin-bottom: 7px;
+	color: #353535;
+	background-image: url(../images/dropdown2.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	border: solid thin rgba(0,0,0,0.15);
+	text-decoration: none;
+	font-size: 13px;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	z-index: 1;
+
+	transition: all 0.1s ease;
+}
+
+select.control.teal:not(.material),
+select.control.green:not(.material),
+select.control.blue:not(.material),
+select.control.magenta:not(.material),
+select.control.purple:not(.material),
+select.control.pink:not(.material),
+select.control.dark:not(.material),
+select.control.orange:not(.material),
+select.control.red:not(.material),
+select.control.grey:not(.material),
+body:not(.scheme-lightgrey):not(.white) select.control.primary:not(.material) {
+	background-image: url(../images/dropdown2_white.png);
+}
+
+select option {
+	color: #000 !important;
+}
+
+select.control.material {
+	background-color: rgba(255,255,255,0);
+	border: none;
+	border-bottom: solid thin rgba(0,0,0,0.1);	
+}
+
+select.control:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):not(.gradient):hover {
+	background: url(../images/dropdown2.png) right center no-repeat, rgba(255,255,255,0.21);
+	background: url(../images/dropdown2.png) right center no-repeat, -moz-linear-gradient(top, rgba(255,255,255,0.21) 0%, rgba(255,255,255,0.21) 100%);
+	background: url(../images/dropdown2.png) right center no-repeat, -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.21)), color-stop(100%, rgba(255,255,255,0.21)));
+	background: url(../images/dropdown2.png) right center no-repeat, -webkit-linear-gradient(top, rgba(255,255,255,0.21) 0%, rgba(255,255,255,0.21) 100%);
+	background: url(../images/dropdown2.png) right center no-repeat, -o-linear-gradient(top, rgba(255,255,255,0.21) 0%, rgba(255,255,255,0.21) 100%);
+	background: url(../images/dropdown2.png) right center no-repeat, -ms-linear-gradient(top, rgba(255,255,255,0.21) 0%, rgba(255,255,255,0.21) 100%);
+	background: url(../images/dropdown2.png) right center no-repeat, linear-gradient(to bottom, rgba(255,255,255,0.21) 0%, rgba(255,255,255,0.21) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+select.control:not(.disabled):not(.no-hover):not(.material):not(.gradient):hover {
+	background: url(../images/dropdown2.png) right center no-repeat, rgba(0,0,0,0.11);
+	background: url(../images/dropdown2.png) right center no-repeat, -moz-linear-gradient(top, rgba(0,0,0,0.11) 0%, rgba(0,0,0,0.11) 100%);
+	background: url(../images/dropdown2.png) right center no-repeat, -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.11)), color-stop(100%, rgba(0,0,0,0.11)));
+	background: url(../images/dropdown2.png) right center no-repeat, -webkit-linear-gradient(top, rgba(0,0,0,0.11) 0%, rgba(0,0,0,0.11) 100%);
+	background: url(../images/dropdown2.png) right center no-repeat, -o-linear-gradient(top, rgba(0,0,0,0.11) 0%, rgba(0,0,0,0.11) 100%);
+	background: url(../images/dropdown2.png) right center no-repeat, -ms-linear-gradient(top, rgba(0,0,0,0.11) 0%, rgba(0,0,0,0.11) 100%);
+	background: url(../images/dropdown2.png) right center no-repeat, linear-gradient(to bottom, rgba(0,0,0,0.11) 0%, rgba(0,0,0,0.11) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+select.control.teal:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):not(.gradient):hover,
+select.control.green:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):not(.gradient):hover,
+select.control.blue:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):not(.gradient):hover,
+select.control.magenta:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):not(.gradient):hover,
+select.control.purple:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):not(.gradient):hover,
+select.control.pink:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):not(.gradient):hover,
+select.control.dark:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):not(.gradient):hover,
+select.control.orange:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):not(.gradient):hover,
+select.control.red:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):not(.gradient):hover,
+select.control.grey:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):not(.gradient):hover,
+body:not(.scheme-lightgrey):not(.white) select.control.primary:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):not(.gradient):hover {
+	background: url(../images/dropdown2_white.png) right center no-repeat, rgba(255,255,255,0.21);
+	background: url(../images/dropdown2_white.png) right center no-repeat, -moz-linear-gradient(top, rgba(255,255,255,0.21) 0%, rgba(255,255,255,0.21) 100%);
+	background: url(../images/dropdown2_white.png) right center no-repeat, -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.21)), color-stop(100%, rgba(255,255,255,0.21)));
+	background: url(../images/dropdown2_white.png) right center no-repeat, -webkit-linear-gradient(top, rgba(255,255,255,0.21) 0%, rgba(255,255,255,0.21) 100%);
+	background: url(../images/dropdown2_white.png) right center no-repeat, -o-linear-gradient(top, rgba(255,255,255,0.21) 0%, rgba(255,255,255,0.21) 100%);
+	background: url(../images/dropdown2_white.png) right center no-repeat, -ms-linear-gradient(top, rgba(255,255,255,0.21) 0%, rgba(255,255,255,0.21) 100%);
+	background: url(../images/dropdown2_white.png) right center no-repeat, linear-gradient(to bottom, rgba(255,255,255,0.21) 0%, rgba(255,255,255,0.21) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+select.control.teal:not(.disabled):not(.no-hover):not(.material):not(.gradient):hover,
+select.control.green:not(.disabled):not(.no-hover):not(.material):not(.gradient):hover,
+select.control.blue:not(.disabled):not(.no-hover):not(.material):not(.gradient):hover,
+select.control.magenta:not(.disabled):not(.no-hover):not(.material):not(.gradient):hover,
+select.control.purple:not(.disabled):not(.no-hover):not(.material):not(.gradient):hover,
+select.control.pink:not(.disabled):not(.no-hover):not(.material):not(.gradient):hover,
+select.control.dark:not(.disabled):not(.no-hover):not(.material):not(.gradient):hover,
+select.control.orange:not(.disabled):not(.no-hover):not(.material):not(.gradient):hover,
+select.control.red:not(.disabled):not(.no-hover):not(.material):not(.gradient):hover,
+select.control.grey:not(.disabled):not(.no-hover):not(.material):not(.gradient):hover,
+body:not(.scheme-lightgrey):not(.white) select.control.primary:not(.disabled):not(.no-hover):not(.material):not(.gradient):hover {
+	background: url(../images/dropdown2_white.png) right center no-repeat, rgba(0,0,0,0.21);
+	background: url(../images/dropdown2_white.png) right center no-repeat, -moz-linear-gradient(top, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.21) 100%);
+	background: url(../images/dropdown2_white.png) right center no-repeat, -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.21)), color-stop(100%, rgba(0,0,0,0.21)));
+	background: url(../images/dropdown2_white.png) right center no-repeat, -webkit-linear-gradient(top, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.21) 100%);
+	background: url(../images/dropdown2_white.png) right center no-repeat, -o-linear-gradient(top, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.21) 100%);
+	background: url(../images/dropdown2_white.png) right center no-repeat, -ms-linear-gradient(top, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.21) 100%);
+	background: url(../images/dropdown2_white.png) right center no-repeat, linear-gradient(to bottom, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.21) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+select.control:not(.disabled):active {
+	border-color: rgba(0,0,0,0.3);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+select.control:not(.disabled)[class*="rounded"]:focus {
+	border-radius: 4px 4px 0 0 !important;
+	border-color: rgba(0,0,0,0.3);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+select.control.material:not(.disabled)[class*="rounded"]:focus {
+	box-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+
+select.control option {
+	background: white;
+}
+
+select.control.teal:not(.material) {
+	background-color: #16a085 !important;
+	color: #fff !important;
+}
+
+select.control.green:not(.material) {
+	background-color: #27ae60 !important;
+	color: #fff !important;
+}
+
+select.control.blue:not(.material) {
+	background-color: #2980b9 !important;
+	color: #fff !important;
+}
+
+select.control.lightblue:not(.material) {
+	background-color: #03a9f4 !important;
+	color: #fff !important;
+}
+
+select.control.cyan:not(.material) {
+	background-color: #00bcd4 !important;
+	color: #fff !important;
+}
+
+select.control.purple:not(.material) {
+	background-color: #9c27b0 !important;
+	color: #fff !important;
+}
+
+select.control.pink:not(.material) {
+	background-color: #e91e63 !important;
+	color: #fff !important;
+}
+
+select.control.magenta:not(.material) {
+	background-color: #8e44ad !important;
+	color: #fff !important;
+}
+
+select.control.dark:not(.material) {
+	background-color: #2c3e50 !important;
+	color: #fff !important;
+}
+
+select.control.yellow:not(.material) {
+	background-color: #f1c40f !important;
+	color: rgba(0,0,0,0.8) !important;
+}
+
+select.control.orange:not(.material) {
+	background-color: #d35400 !important;
+	color: #fff !important;
+}
+
+select.control.red:not(.material) {
+	background-color: #c0392b !important;
+	color: #fff !important;
+}
+
+select.control.grey:not(.material) {
+	background-color: #7f8c8d !important;
+}
+
+select.control.lightgrey:not(.material) {
+	background-color: #bdc3c7 !important;
+	color: rgba(0,0,0,0.8) !important;
+}
+
+select.control.white:not(.material) {
+	background-color: #fff !important;
+	color: rgba(0,0,0,0.8) !important;
+}
+
+
+body.scheme-teal select.control.primary:not(.material) {
+	background-color: #16a085;
+	color: #fff !important;
+}
+body.scheme-green select.control.primary:not(.material) {
+	background-color: #27ae60;
+	color: #fff !important;
+}
+body.scheme-blue select.control.primary:not(.material) {
+	background-color: #2980b9;
+	color: #fff !important;
+}
+
+body.scheme-lightblue select.control.primary:not(.material) {
+	background-color: #03a9f4;
+	color: #fff !important;
+}
+body.scheme-cyan select.control.primary:not(.material) {
+	background-color: #00bcd4;
+	color: #fff !important;
+}
+body.scheme-purple select.control.primary:not(.material) {
+	background-color: #9c27b0;
+	color: #fff !important;
+}
+body.scheme-pink select.control.primary:not(.material) {
+	background-color: #e91e63;
+	color: #fff !important;
+}
+
+body.scheme-magenta select.control.primary:not(.material) {
+	background-color: #8e44ad;
+	color: #fff !important;
+}
+body.scheme-dark select.control.primary:not(.material) {
+	background-color: #2c3e50;
+	color: #fff !important;
+}
+body.scheme-yellow select.control.primary:not(.material) {
+	background-color: #f1c40f;
+	color: #fff !important;
+}
+body.scheme-orange select.control.primary:not(.material) {
+	background-color: #d35400;
+	color: #fff !important;
+}
+body.scheme-red select.control.primary:not(.material) {
+	background-color: #c0392b;
+	color: #fff !important;
+}
+body.scheme-lightgrey select.control.primary:not(.material) {
+	background-color: #bdc3c7;
+	color: rgba(0,0,0,0.8) !important;
+}
+body.scheme-grey select.control.primary:not(.material) {
+	background-color: #7f8c8d;
+}
+body.scheme-white select.control.primary:not(.material) {
+	background-color: #fff;
+	color: rgba(0,0,0,0.8) !important;
+}
+
+
+select.control.teal.material {
+	border-color: #16a085 !important;
+}
+
+select.control.green.material {
+	border-color: #27ae60 !important;
+}
+
+select.control.blue.material {
+	border-color: #2980b9 !important;
+}
+
+select.control.lightblue.material {
+	border-color: #03a9f4 !important;
+}
+
+select.control.cyan.material {
+	border-color: #00bcd4 !important;
+}
+
+select.control.purple.material {
+	border-color: #9c27b0 !important;
+}
+
+select.control.pink.material {
+	border-color: #e91e63 !important;
+}
+
+select.control.magenta.material {
+	border-color: #8e44ad !important;
+}
+
+select.control.dark.material {
+	border-color: #2c3e50 !important;
+}
+
+select.control.yellow.material {
+	border-color: #f1c40f !important;
+}
+
+select.control.orange.material {
+	border-color: #d35400 !important;
+}
+
+select.control.red.material {
+	border-color: #c0392b !important;
+}
+
+select.control.grey.material {
+	border-color: #7f8c8d !important;
+}
+
+select.control.lightgrey.material {
+	border-color: #bdc3c7 !important;
+}
+
+select.control.white.material {
+	border-color: #fff !important;
+}
+
+
+body.scheme-teal select.control.primary.material {
+	border-color: #16a085 !important;
+}
+body.scheme-green select.control.primary.material {
+	border-color: #27ae60 !important;
+}
+body.scheme-blue select.control.primary.material {
+	border-color: #2980b9 !important;
+}
+body.scheme-lightblue select.control.primary.material {
+	border-color: #03a9f4 !important;
+}
+body.scheme-cyan select.control.primary.material {
+	border-color: #00bcd4 !important;
+}
+body.scheme-purple select.control.primary.material {
+	border-color: #9c27b0 !important;
+}
+body.scheme-pink select.control.primary.material {
+	border-color: #e91e63 !important;
+}
+body.scheme-magenta select.control.primary.material {
+	border-color: #8e44ad !important;
+}
+body.scheme-dark select.control.primary.material {
+	border-color: #2c3e50 !important;
+}
+body.scheme-yellow select.control.primary.material {
+	border-color: #f1c40f !important;
+}
+body.scheme-orange select.control.primary.material {
+	border-color: #d35400 !important;
+}
+body.scheme-red select.control.primary.material {
+	border-color: #c0392b !important;
+}
+body.scheme-lightgrey select.control.primary.material {
+	border-color: #bdc3c7 !important;
+}
+body.scheme-grey select.control.primary.material {
+	border-color: #7f8c8d !important;
+}
+body.scheme-white select.control.primary.material {
+	border-color: #fff !important;
+}
+
+
+select.control.gradient:not(.material).teal {
+	background-color: #16a085 !important;
+}
+
+select.control.gradient:not(.material).green {
+	background-color: #27ae60 !important;
+}
+
+select.control.gradient:not(.material).blue {
+	background-color: #2980b9 !important;
+}
+select.control.gradient:not(.material).lightblue {
+	background-color: #03a9f4 !important;
+}
+select.control.gradient:not(.material).cyan {
+	background-color: #00bcd4 !important;
+}
+select.control.gradient:not(.material).purple {
+	background-color: #9c27b0 !important;
+}
+select.control.gradient:not(.material).pink {
+	background-color: #e91e63 !important;
+}
+select.control.gradient:not(.material).magenta {
+	background-color: #8e44ad !important;
+}
+
+select.control.gradient:not(.material).dark {
+	background-color: #2c3e50 !important;
+}
+
+select.control.gradient:not(.material).yellow {
+	background-color: #f1c40f !important;
+}
+
+select.control.gradient:not(.material).orange {
+	background-color: #d35400 !important;
+}
+
+select.control.gradient:not(.material).red {
+	background-color: #c0392b !important;
+}
+
+select.control.gradient:not(.material).grey {
+	background-color: #7f8c8d !important;
+}
+
+select.control.gradient:not(.material).lightgrey {
+	background-color: #bdc3c7 !important;
+}
+
+select.control.gradient:not(.material).white {
+	background-color: #fff !important;
+}
+
+
+body.scheme-teal select.control.gradient:not(.material).primary {
+	background-color: #16a085 !important;
+}
+body.scheme-green select.control.gradient:not(.material).primary {
+	background-color: #27ae60 !important;
+}
+body.scheme-blue select.control.gradient:not(.material).primary {
+	background-color: #2980b9 !important;
+}
+body.scheme-lightblue select.control.gradient:not(.material).primary {
+	background-color: #03a9f4 !important;
+}
+body.scheme-cyan select.control.gradient:not(.material).primary {
+	background-color: #00bcd4 !important;
+}
+body.scheme-purple select.control.gradient:not(.material).primary {
+	background-color: #9c27b0 !important;
+}
+body.scheme-pink select.control.gradient:not(.material).primary {
+	background-color: #e91e63 !important;
+}
+body.scheme-magenta select.control.gradient:not(.material).primary {
+	background-color: #8e44ad !important;
+}
+body.scheme-dark select.control.gradient:not(.material).primary {
+	background-color: #2c3e50 !important;
+}
+body.scheme-yellow select.control.gradient:not(.material).primary {
+	background-color: #f1c40f !important;
+}
+body.scheme-orange select.control.gradient:not(.material).primary {
+	background-color: #d35400 !important;
+}
+body.scheme-red select.control.gradient:not(.material).primary {
+	background-color: #c0392b !important;
+}
+body.scheme-lightgrey select.control.gradient:not(.material).primary {
+	background-color: #bdc3c7 !important;
+}
+body.scheme-grey select.control.gradient:not(.material).primary {
+	background-color: #7f8c8d !important;
+}
+body.scheme-white select.control.gradient:not(.material).primary {
+	background-color: #fff !important;
+}
+
+select.control.gradient:not(.material).teal:hover {
+	background-color: #16a085 !important;
+}
+
+select.control.gradient:not(.material).green:hover {
+	background-color: #27ae60 !important;
+}
+
+select.control.gradient:not(.material).blue:hover {
+	background-color: #2980b9 !important;
+}
+
+select.control.gradient:not(.material).lightblue:hover {
+	background-color: #03a9f4 !important;
+}
+
+select.control.gradient:not(.material).cyan:hover {
+	background-color: #00bcd4 !important;
+}
+
+select.control.gradient:not(.material).purple:hover {
+	background-color: #9c27b0 !important;
+}
+
+select.control.gradient:not(.material).pink:hover {
+	background-color: #e91e63 !important;
+}
+
+select.control.gradient:not(.material).magenta:hover {
+	background-color: #8e44ad !important;
+}
+
+select.control.gradient:not(.material).dark:hover {
+	background-color: #2c3e50 !important;
+}
+
+select.control.gradient:not(.material).yellow:hover {
+	background-color: #f1c40f !important;
+}
+
+select.control.gradient:not(.material).orange:hover {
+	background-color: #d35400 !important;
+}
+
+select.control.gradient:not(.material).red:hover {
+	background-color: #c0392b !important;
+}
+
+select.control.gradient:not(.material).grey:hover {
+	background-color: #7f8c8d !important;
+}
+
+select.control.gradient:not(.material).lightgrey:hover {
+	background-color: #bdc3c7 !important;
+}
+
+select.control.gradient:not(.material).white:hover {
+	background-color: #fff !important;
+}
+
+
+body.scheme-teal select.control.gradient:not(.material).primary:hover {
+	background-color: #16a085 !important;
+}
+
+body.scheme-green select.control.gradient:not(.material).primary:hover {
+	background-color: #27ae60 !important;
+}
+
+body.scheme-blue select.control.gradient:not(.material).primary:hover {
+	background-color: #2980b9 !important;
+}
+
+body.scheme-lightblue select.control.gradient:not(.material).primary:hover {
+	background-color: #03a9f4 !important;
+}
+
+body.scheme-cyan select.control.gradient:not(.material).primary:hover {
+	background-color: #00bcd4 !important;
+}
+
+body.scheme-purple select.control.gradient:not(.material).primary:hover {
+	background-color: #9c27b0 !important;
+}
+
+body.scheme-pink select.control.gradient:not(.material).primary:hover {
+	background-color: #e91e63 !important;
+}
+
+body.scheme-magenta select.control.gradient:not(.material).primary:hover {
+	background-color: #8e44ad !important;
+}
+
+body.scheme-dark select.control.gradient:not(.material).primary:hover {
+	background-color: #2c3e50 !important;
+}
+
+body.scheme-yellow select.control.gradient:not(.material).primary:hover {
+	background-color: #f1c40f !important;
+}
+
+body.scheme-orange select.control.gradient:not(.material).primary:hover {
+	background-color: #d35400 !important;
+}
+
+body.scheme-red select.control.gradient:not(.material).primary:hover {
+	background-color: #c0392b !important;
+}
+
+body.scheme-grey select.control.gradient:not(.material).primary:hover {
+	background-color: #7f8c8d !important;
+}
+
+body.scheme-lightgrey select.control.gradient:not(.material).primary:hover {
+	background-color: #bdc3c7 !important;
+}
+
+body.scheme-white select.control.gradient:not(.material).primary:hover {
+	background-color: #fff !important;
+}
+
+
+select.control.gradient:not(.material) {
+	
+}
+
+select.control.gradient:not(.disabled):not(.no-hover):not(.material):not(.hover-inverse):hover {
+	background: url(../images/dropdown2.png) right center no-repeat, rgba(255,255,255,0.51) !important;
+	background: url(../images/dropdown2.png) right center no-repeat, -moz-linear-gradient(top, rgba(255,255,255,0.51) 0%, rgba(255,255,255,0) 100%) !important;
+	background: url(../images/dropdown2.png) right center no-repeat, -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.51)), color-stop(100%, rgba(255,255,255,0))) !important;
+	background: url(../images/dropdown2.png) right center no-repeat, -webkit-linear-gradient(top, rgba(255,255,255,0.51) 0%, rgba(255,255,255,0) 100%) !important;
+	background: url(../images/dropdown2.png) right center no-repeat, -o-linear-gradient(top, rgba(255,255,255,0.51) 0%, rgba(255,255,255,0) 100%) !important;
+	background: url(../images/dropdown2.png) right center no-repeat, -ms-linear-gradient(top, rgba(255,255,255,0.51) 0%, rgba(255,255,255,0) 100%) !important;
+	background: url(../images/dropdown2.png) right center no-repeat, linear-gradient(to bottom, rgba(255,255,255,0.51) 0%, rgba(255,255,255,0) 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+select.control.gradient:not(.disabled):not(.no-hover):not(.material):hover {
+	background: url(../images/dropdown2.png) right center no-repeat, rgba(0,0,0,0.21);
+	background: url(../images/dropdown2.png) right center no-repeat, -moz-linear-gradient(top, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.21) 100%);
+	background: url(../images/dropdown2.png) right center no-repeat, -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.21)), color-stop(100%, rgba(0,0,0,0.21)));
+	background: url(../images/dropdown2.png) right center no-repeat, -webkit-linear-gradient(top, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.21) 100%);
+	background: url(../images/dropdown2.png) right center no-repeat, -o-linear-gradient(top, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.21) 100%);
+	background: url(../images/dropdown2.png) right center no-repeat, -ms-linear-gradient(top, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.21) 100%);
+	background: url(../images/dropdown2.png) right center no-repeat, linear-gradient(to bottom, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.21) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
