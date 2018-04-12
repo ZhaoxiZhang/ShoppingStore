@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once 'include_func.php';
 
 check_admin_status();
@@ -77,7 +77,7 @@ check_admin_status();
                         </tr>
                         <tr>
                             <th>开发团队</th>
-                            <td>张昭锡</td>
+                            <td>ZhaoxiZhang</td>
                         </tr>
                     </table>
                 </div>
