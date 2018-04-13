@@ -15,3 +15,15 @@
 主页
 
 ![main](https://github.com/ZhaoxiZhang/ShoppingStore/blob/master/images/main.png)
+
+
+
+## E-R设计
+
+![E-R](https://github.com/ZhaoxiZhang/ShoppingStore/blob/master/images/E-R.png)
+
+
+
+## 程序框图
+
+![psd](https://github.com/ZhaoxiZhang/ShoppingStore/blob/master/images/psd.png)
