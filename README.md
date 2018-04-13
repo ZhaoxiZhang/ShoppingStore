@@ -10,20 +10,20 @@
 
 登陆页
 
-![login](https://github.com/ZhaoxiZhang/ShoppingStore/blob/master/images/login.png)
+![login](https://github.com/ZhaoxiZhang/ShoppingStore/blob/master/Images/Login.png)
 
 主页
 
-![main](https://github.com/ZhaoxiZhang/ShoppingStore/blob/master/images/main.png)
+![main](https://github.com/ZhaoxiZhang/ShoppingStore/blob/master/Images/Main.png)
 
 
 
 ## E-R设计
 
-![E-R](https://github.com/ZhaoxiZhang/ShoppingStore/blob/master/images/E-R.png)
+![E-R](https://github.com/ZhaoxiZhang/ShoppingStore/blob/master/Images/E-R.png)
 
 
 
 ## 程序框图
 
-![psd](https://github.com/ZhaoxiZhang/ShoppingStore/blob/master/images/psd.png)
+![psd](https://github.com/ZhaoxiZhang/ShoppingStore/blob/master/Images/PSD.png)
